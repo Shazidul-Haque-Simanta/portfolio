@@ -1,0 +1,402 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Navigation Bar */
+  
+  #home {
+    background-color:  #046958;
+    padding-bottom: 1cm;
+    margin-left:-1cm;
+    margin-right:-1cm;
+    margin-top:-1cm;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    height: 5mm;
+   }
+  
+  .topmenu {
+    color: lightgray;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration:none;
+  }
+  
+  .topmenu:hover {
+    color: white;
+    font-weight:bolder;
+    text-decoration: underline;
+    /* Add the styles here */
+  }
+  
+  .topdiv {
+    float: right;
+    padding-right: 1cm;
+  }
+  
+  .profile_name {
+    float: left;
+    padding-left: 1cm;
+    color: rgb(228, 203, 224);
+    font-size:40px ;
+    /* Add the styles here */
+  }
+
+  
+  .contact_info a{
+    color:whitesmoke;
+    text-decoration:none;
+  }
+  
+  .profile_name .contact_info {
+    font-size: 15px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+  .contact_info a:hover{
+    color: rgb(225, 17, 17);
+    font-weight:bolder;
+    text-decoration: underline;
+  }
+  
+  .contact_info img {
+    width: 22px;
+    margin-right: 10px;
+    float:left;
+  }
+  
+  /* Titles */
+  
+  h2 {
+    text-align: justify;
+    font-size: 50px;
+    text-align: center;
+    float: left;
+    color: #7600bc;
+    margin: 30px;
+    margin-left: 60px;
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  
+  .introduction {
+    text-align: justify;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    animation-duration: 5s;
+    position: relative;
+  }
+  
+  /* Used in the About Me sections */
+  
+  /* Hero Section Styling */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background-color:whit;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.profile-image-container {
+  margin-right: 30px;
+}
+
+.profile_image_large {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for intro text */
+.intro-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.intro-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+  
+ 
+  /* Skills */
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  perspective: 1200px; /* Increased perspective for a more dramatic 3D effect */
+}
+
+.skill {
+  border: 1px solid rgba(100, 100, 100, 0.5); /* Subtle border for depth */
+  border-radius: 10px;
+  text-align: center;
+  margin: 25px;
+  padding: 15px;
+  width: 1.5in; /* Slightly wider for better content fit */
+  font-size: 20px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6); /* Gradient background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 
+              0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor for interaction */
+}
+
+.skill:hover {
+  transform: translateY(-15px) rotateY(10deg) scale(1.05); /* Enhanced 3D hover effect */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.skill img {
+  height: 40px; /* Increased icon size for better visibility */
+  margin-bottom: 10px; /* Space below the icon */
+  transition: transform 0.3s ease; /* Transition for icon */
+}
+
+.skill:hover img {
+  transform: rotate(360deg); /* Icon rotation effect on hover */
+}
+
+.skills h6 {
+  font-size: 22px; /* Slightly larger font size for headings */
+  margin: 10px 0 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333; /* Darker color for better contrast */
+}
+
+.skills p {
+  font-size: 16px; /* Slightly larger font size for descriptions */
+  color: rgba(0, 0, 0, 0.7); /* Softer color for better readability */
+  margin: 5px 0;
+}
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  
+
+  /* Projects */
+  
+  .projects {
+    display:flex;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color:#7600bc;
+  }
+  
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between cards */
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px; /* Fixed width for cards */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    color: #4A90E2; /* Attractive title color */
+    margin-bottom: 10px;
+  }
+  
+  .project-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-card li {
+    color: #666; /* Gray text for description */
+    line-height: 1.5;
+  }
+  
+  /* Recommendations */
+  
+  .all_recommendations {
+    display: flex;
+    align-items: center;
+    margin-left: 1in;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 20px;
+  }
+  
+  .recommendation {
+    display: flex;
+    font-style: italic;
+    text-align: left;
+    width: 21.875rem;
+    padding: 1rem;
+    background-color: #90ceea;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+    border:1px solid gray;
+    font-size: 18px;
+    height:150px
+  }
+  
+  .recommendation span {
+    color: #7600bc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Scroll to Top Button */
+  
+  .iconbutton{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background-color: #7600bc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    cursor: pointer;
+  }
+  
+  /* Form Pop-up */
+  
+  .popup {
+    width:400px;
+    background-color: #e8bcf0;
+    border-radius: 3mm;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: fixed;
+    /* padding: 30px; */
+    visibility: hidden;
+  }
+  
+  .popup img {
+    padding-top: 20px;
+  }
+  
+  .popup button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+    margin-left: 25%;
+  }
+  
+  .popup button:hover {
+    background-color: #fff;
+    border: 2px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    font-weight: bolder;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 25%;
+  }
+  
+  /* Recommendation Form */
+
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 10px 0;
+  width: 100%;
+  padding: 10px; /* Added padding for better spacing */
+  border: 1px solid #ccc; /* Light border for input fields */
+  border-radius: 5px; /* Slightly rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input:focus, textarea:focus {
+  border-color: #007BFF; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+fieldset {
+  display: flex; /* Changed to flex for proper layout */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items */
+  justify-content: center;
+  padding: 25px; 
+  margin: 0 auto; /* Center the fieldset */
+  border: thin solid white;
+  width: 50%;
+  background-color: #f9f9f9; /* Light background color for contrast */
+  border-radius: 10px; /* Slightly rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+  
+  /* Buttons */
+  
+  button {
+    background-color: #fff;
+    border: 1px solid #7600bc;
+    color: #7600bc;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    width: 2in;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #7600bc;
+    border: 1px solid #7600bc;
+    color: #fff;
+    display: block;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+  }
